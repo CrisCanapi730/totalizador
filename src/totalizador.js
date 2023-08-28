@@ -13,7 +13,7 @@ function porcentaje(estado)
     {
         return 6.25;
     }
-    if(estado === "LA")
+    if(estado === "AL")
     {
         return 4;
     }
