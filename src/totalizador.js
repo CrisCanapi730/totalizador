@@ -5,9 +5,13 @@ function porcentaje(estado)
     {
         return 6.65;
     }
-    if(estado == "NV")
+    if(estado === "NV")
     {
         return 8;
+    }
+    if(estado === "TX")
+    {
+        return 6.25;
     }
 }
 export default porcentaje;

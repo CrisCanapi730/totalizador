@@ -6,4 +6,7 @@ describe("Porcentaje", () => {
     it("deberia retornar tasa de UT", () => {
         expect(porcentaje("NV")).toEqual(8);
       });
+    it("deberia retornar tasa de UT", () => {
+        expect(porcentaje("TX")).toEqual(6.25);
+     });
   });
