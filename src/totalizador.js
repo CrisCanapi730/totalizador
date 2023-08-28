@@ -17,5 +17,9 @@ function porcentaje(estado)
     {
         return 4;
     }
+    if(estado === "CA")
+    {
+        return 8.25;
+    }
 }
 export default porcentaje;
