@@ -15,6 +15,5 @@ form.addEventListener("submit", (event) => {
   const estadoSelec = estado.value;
   const porcentajeEst = porcentaje(estadoSelec);
   div.innerHTML = "<p> Cantidad de item: " + firstNumber + "</p>";
-  div2.innerHTML = "<p> Precio por item: " + precioItem +"</p>"+"Estado: " + estado.value + " " +porcentajeEst +"%";
-
+  div2.innerHTML = "<p> Precio por item: " + precioItem +"</p>"+"Estado: " + estado.value + " " +porcentajeEst +"%" +"<br> <br> Precio neto: $" + firstNumber*precioItem;
 });
