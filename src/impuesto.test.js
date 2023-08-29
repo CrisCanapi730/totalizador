@@ -12,6 +12,9 @@ describe("Impuesto", () => {
     it("deberia devolver el impuesto del total del estado NV", () => {
         expect(calcularImpuesto("NV",100)).toEqual(8);
     });
+    it("deberia devolver el impuesto del total del estado UT", () => {
+        expect(calcularImpuesto("UT",100)).toEqual(6.65);
+    });
 
     it("deberia devolver el total con impuesto del estado TX", () => {
         expect(totalConImpuesto("TX",500)).toEqual(531.25);
@@ -22,8 +25,11 @@ describe("Impuesto", () => {
     it("deberia devolver el total con impuesto del estado CA", () => {
         expect(totalConImpuesto("CA",100)).toEqual(108.25);
     });
-    it("deberia devolver el total con impuesto del estado CA", () => {
+    it("deberia devolver el total con impuesto del estado NV", () => {
         expect(totalConImpuesto("NV",100)).toEqual(108);
+    });
+    it("deberia devolver el total con impuesto del estado UT", () => {
+        expect(totalConImpuesto("UT",100)).toEqual(106.65);
     });
       
   });

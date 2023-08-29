@@ -17,6 +17,10 @@ export function calcularImpuesto(estado, cantidad)
     {
         return (cantidad*8)/100;
     }
+    if(estado==="UT")
+    {
+        return (cantidad*6.65)/100;
+    }
 }
 
 export function totalConImpuesto(estado, cantidad)
@@ -42,6 +46,12 @@ export function totalConImpuesto(estado, cantidad)
     if(estado === "NV")
     {
         const impu = calcularImpuesto("NV", cantidad);
+        const total = impu + cantidad;
+        return total;
+    }
+    if(estado === "UT")
+    {
+        const impu = calcularImpuesto("UT", cantidad);
         const total = impu + cantidad;
         return total;
     }
