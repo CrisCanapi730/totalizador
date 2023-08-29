@@ -35,7 +35,7 @@ form.addEventListener("submit", (event) => {
   div4.innerHTML = "<p> Precio total con impuesto: " + totalMasImp + "</p>";
 
 
-  div5.innerHTML = "<p> Precio con descuento: " + totalDesImp + "</p>";
+  div5.innerHTML = "<p> Precio Total: " + totalDesImp + "</p>";
   div6.innerHTML = "<p> Cantidad de Descuento(" +porcentajeDess+ "): " + des + "</p>";
 
 
