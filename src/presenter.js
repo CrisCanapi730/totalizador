@@ -29,14 +29,14 @@ form.addEventListener("submit", (event) => {
   const totalDesImp = precioTotal + impuesto - des;
 
 
-  div.innerHTML = "<p> Cantidad de item: " + firstNumber + "</p>";
-  div2.innerHTML = "<p> Precio por item: " + precioItem +"</p>"+"Estado: " + estado.value + "%" +porcentajeEst +"" +"<br> <br> Precio neto: $" + precioTotal;
+  //div.innerHTML = "<p> Cantidad de item: " + firstNumber + "</p>";
+  div2.innerHTML = "<p>"  + " Precio neto: $" + precioTotal;
   div3.innerHTML = "<p> Impuesto: $" + impuesto + "</p>";
-  div4.innerHTML = "<p> Precio total con impuesto: $" + totalMasImp + "</p>";
+  //div4.innerHTML = "<p> Precio total con impuesto: $" + totalMasImp + "</p>";
+  div6.innerHTML = "Descuento(%" +porcentajeDess+ "): $" + des + "</p>";
 
 
   div5.innerHTML = "<p> Precio Total: $" + totalDesImp + "</p>";
-  div6.innerHTML = "<p> Cantidad de Descuento(%" +porcentajeDess+ "): $" + des + "</p>";
 
 
 });
