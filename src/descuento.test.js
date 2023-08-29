@@ -9,5 +9,8 @@ describe("descuento", () => {
     it("calculo el descuento de 7000 o mas", () => {
         expect(descuento(7000)).toEqual(490);
     });
+    it("calculo el descuento de 10000 o mas", () => {
+        expect(descuento(10000)).toEqual(1000);
+    });
   });
   
