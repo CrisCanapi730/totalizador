@@ -1,7 +1,11 @@
 
 function descuento(total)
 {
-    if(total>=10000)
+    if(total>=30000)
+    {
+        return (total*15)/100;
+    }
+    else if(total>=10000)
     {
         return (total*10)/100;
     }
